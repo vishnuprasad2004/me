@@ -1,13 +1,10 @@
-/* @keyframes  {
-    
-} */
-
 body {
-    background-color: crimson ;
-    color:#efefef;
-    font-family: "Space Grotesk", "Roboto", sans-serif;
+    background-color: whitesmoke;
+    font-family: "Space Grotesk", sans-serif;
     background-size: cover;
     text-align: center;
+    background-image: linear-gradient(#a9a9a93f 1px, transparent 2px), linear-gradient(to right, #8c8c8c47 1px, rgba(167, 167, 167, 0.293) 2px);
+    background-size: 30px 30px;
 }
 
 #container {
@@ -20,27 +17,17 @@ body {
     padding-bottom: 20px;
 }
 
-h1 {
-    color:#111111;
-    font-size: 3em;
-    user-select: none;
-    text-decoration: none;
-    margin-bottom: 0;
-} 
-
 p {
     margin-top: 0;
-}
-
-h1:hover {
-    text-decoration: wavy;
-    transform-origin: center;   
-    transition: ease-in-out 200ms;
 }
 
 a {
     text-decoration: none;
     color: black;
+}
+
+#header > #details > h2 {
+    margin-bottom: 0;
 }
 
 #content {
@@ -54,23 +41,17 @@ a {
     text-align: center;
 }
 
-#about {
-    padding-left: 10px;
-    padding-right: 10px;
-}
 
 #dp {
     border-radius: 50%;
-    width: 300px;
-    height: 300px;
+    width: 150px;
+    height: 150px;
     margin: 0 auto;
     display: block;
-    box-shadow: 0 0 0 2px rgb(255, 255, 255), 0 0 0 8px #111111;
     user-select: none;
 }
 
-#links {
-    /* width:100vw; */
+#link-tabs {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -78,24 +59,47 @@ a {
     gap:20px;
 }
 
-.link-box {
-    font-size: larger;
-    width: 80vw;
+#link-icons {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    /* padding: 20px 50px 20px 50px; */
+    flex-direction: row;
+    justify-content: space-between;
+    gap:10px;
+    font-size: 1.5rem;
+}
+
+.icon {
+    display: grid;
+    place-items: center;
+    width: 50px;
+    height: 50px;
+    margin: 0 auto;
+    user-select: none;
     background-color: aliceblue;
-    border-radius: 1em;
-    font-weight: 600;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    height:40px;
-    border:4px solid #111111;
+    border-radius: 50%;
+    border: 4px solid black;
     box-shadow: 0px 8px 0 #111111;
 }
 
+.link-box {
+    display: flex;
+    width: 80vw;
+    height:40px;
+    justify-content: space-between;
+    align-items: center;
+    background-color: aliceblue;
+    border-radius: 1em;
+    font-weight: 600;
+    padding: 1em;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border:4px solid #111111;
+    box-shadow: 0px 8px 0 #111111;
+    font-size: medium;
+}
 
+.link-box > i {
+    font-size: 1.5rem;
+}
 
 #share-copy {
     outline: none;
