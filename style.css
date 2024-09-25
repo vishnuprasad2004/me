@@ -7,6 +7,32 @@ body {
     background-size: 30px 30px;
 }
 
+#mode {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 10px;
+    color: #111111;
+    cursor: pointer;
+    font-size: 1.5rem;
+}
+
+.dark-mode {
+    /* background-image: linear-gradient(#6a6a6a3f 1px, transparent 2px), linear-gradient(90deg, #6a6a6a47 1px, rgba(4, 4, 6, .293) 2px);
+    background-size: 30px 30px; */
+    --dot-bg: black;
+    --dot-color: white;
+    --dot-size: 1px;
+    --dot-space: 22px;
+	background:
+		linear-gradient(90deg, var(--dot-bg) calc(var(--dot-space) - var(--dot-size)), transparent 1%) center / var(--dot-space) var(--dot-space),
+		linear-gradient(var(--dot-bg) calc(var(--dot-space) - var(--dot-size)), transparent 1%) center / var(--dot-space) var(--dot-space),
+		var(--dot-color);
+    color:aliceblue;
+}
+
 #container {
     display: flex;
     flex-direction: column;
@@ -107,6 +133,7 @@ a {
     border: transparent;
     font-size: larger;
     font-family: "Space Grotesk", "Roboto", sans-serif;
+    cursor: pointer;
 }
 
 ::selection {

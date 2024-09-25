@@ -7,3 +7,8 @@ async function writeClipboardText(text) {
         console.error(error.message);
     }
 }
+
+document.getElementById("mode").addEventListener("click", () => {
+    document.body.classList.toggle("dark-mode");
+    document.getElementById("mode").innerHTML = document.body.classList.contains("dark-mode") ? '<i class="fa-solid fa-sun" style="color:white;"></i>' : '<i class="fa-solid fa-moon"></i>';
+});
